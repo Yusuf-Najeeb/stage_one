@@ -1,13 +1,17 @@
 const currentDay = document.getElementById("day");
 const currentTime = document.getElementById("time");
-const now = new Date();
 
-const today = now.toLocaleDateString("en-EN", { weekday: "long" });
+document.addEventListener("DOMContentLoaded", () => {
+  const now = new Date();
 
-function getTime() {
-  const time = now.toUTCString().split(" ")[4];
-  currentTime.textContent = `Time: ${time}`;
-  currentDay.textContent = today;
-}
+  const today = now.toLocaleDateString("en-EN", { weekday: "long" });
 
-getTime();
+  function getTime() {
+    const time = now.toUTCString().split(" ")[4];
+    currentTime.textContent = `Time: ${time}`;
+    currentDay.textContent = today;
+  }
+
+  getTime();
+  setInterval(getTime, 1000);
+});

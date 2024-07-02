@@ -64,14 +64,25 @@ a {
   color: #fff8fa;
 }
 
+a:hover {
+  color: #eb5a52;
+}
+
 ul li p {
   text-align: center;
 }
 footer {
+  height: 100%;
+  min-height: 350px;
   background: #080827;
   color: #fffafc;
   padding: 4rem;
   text-align: center;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: stretch;
 }
 .welcome_text {
   width: 95%;
@@ -104,6 +115,10 @@ footer {
 
 .main {
   padding: 1rem 0;
+}
+
+.footer_header {
+  font-size: 2rem !important;
 }
 
 .intro {
