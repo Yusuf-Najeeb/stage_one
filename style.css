@@ -51,7 +51,7 @@ ul li {
   justify-content: center;
   align-items: center;
 
-  flex: 0 0 33%;
+  flex: 0 0 32%;
   border: 1px dashed #ec5b53;
   padding: 1rem;
 }
@@ -81,4 +81,17 @@ ul li p {
 .professional {
   background: #fff8fa;
   box-shadow: #ec5b537d 0px 50px 100px -20px, #fffafc 0px 30px 60px -30px;
+}
+
+.career {
+  background: #eb5a52;
+  box-shadow: #4c4c4c81 0px 50px 100px -20px, #fffafc 0px 30px 60px -30px;
+  color: #080827;
+}
+.career h2 {
+  color: #080827;
+}
+
+.career ul li {
+  border: 1px dashed #080827;
 }
