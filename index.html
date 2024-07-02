@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="data">
+      <p id="name" data-testid="slackDisplayName">Najeeb</p>
+      <p id="email" data-testid="slackEmail">yusnaj21@gmail.com</p>
+      <p id="day" data-testid="currentDay">Today</p>
+      <p id="time" data-testid="currentTimeUTC">Time</p>
+    </div>
     <main class="main">
       <section class="intro">
         <div>
@@ -24,16 +30,11 @@
           </p>
         </div>
         <div>
-          <div class="data">
-            <p class="time" data-testid="currentTimeUTC">Time</p>
-            <p class="day" data-testid="currentDay">Today</p>
-          </div>
           <img
             src="images/headShot.jpeg"
             alt="Najeeb's Profile picture"
             data-testid="slackProfilePicture"
           />
-          <p class="name" data-testid="slackDisplayName">Najeeb</p>
         </div>
       </section>
       <section class="professional">
@@ -285,17 +286,30 @@
           </ul>
         </div>
       </section>
-      <footer class="conclusion">
-        <h2>Conclusion</h2>
-        <p>
-          The next two years promise to be a period of intense learning, growth,
-          and contribution. By setting clear goals and dedicating myself to
-          continuous improvement, I aim to make a significant impact in the
-          front-end development field. Thank you for visiting my journey. Stay
-          tuned for updates and feel free to connect with me on this exciting
-          path!
-        </p>
-      </footer>
     </main>
+    <footer class="conclusion">
+      <h3>Conclusion</h3>
+      <p>
+        The next two years promise to be a period of intense learning, growth,
+        and contribution. By setting clear goals and dedicating myself to
+        continuous improvement, I aim to make a significant impact in the
+        front-end development field. Thank you for visiting my journey. Stay
+        tuned for updates and feel free to connect with me on this exciting
+        path!
+      </p>
+      <br />
+      <br />
+      <br />
+      <h4>Useful Links</h4>
+      <div class="links">
+        <a href="https://hng.tech/learn" data-testid="hngLink">HNG Tech</a>
+        <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+        <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+          >Scrape Any Web</a
+        >
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

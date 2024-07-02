@@ -8,6 +8,7 @@
 
 body {
   box-sizing: inherit;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: url("assets/varying-stripes.svg");
   background-size: cover;
   background-attachment: fixed;
@@ -53,6 +54,15 @@ ul li {
   align-items: center;
   flex: 0 0 95%;
 }
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+a {
+  text-decoration: none;
+  color: #fff8fa;
+}
 
 ul li p {
   text-align: center;
@@ -66,16 +76,23 @@ footer {
 .welcome_text {
   width: 95%;
 }
-.name {
-  font-size: 1.2rem;
-  color: #080827;
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
+
 .data {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-flow: row wrap;
+  background: #fff8fa;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.data p {
+  font-size: 1.2rem;
+  color: #080827;
+  margin: 0.5rem auto;
 }
 .chunk {
   margin: 2rem auto 0;
@@ -91,6 +108,7 @@ footer {
 
 .intro {
   background: #fffafc;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -156,10 +174,7 @@ footer {
   .main {
     padding: 1rem 3rem;
   }
-  .name {
-    font-size: 1.5rem;
-    /* text-align: left; */
-  }
+
   .intro {
     flex-flow: row;
   }
