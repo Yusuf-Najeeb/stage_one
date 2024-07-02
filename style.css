@@ -14,16 +14,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.main {
-  padding: 1rem 0;
-}
-
-.goal {
-  color: #080827;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
 section {
   margin: 0 auto 2rem;
   padding: 1rem 0.75rem;
@@ -51,23 +41,52 @@ ul {
   flex-flow: column;
   gap: 1rem;
 }
+
 ul li {
+  border: 1px dashed #ec5b53;
+  border-radius: 0.7rem;
+  padding: 2rem;
+
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-
   flex: 0 0 95%;
-  border: 1px dashed #ec5b53;
-  padding: 1rem;
+}
+
+ul li p {
+  text-align: center;
+}
+footer {
+  background: #080827;
+  color: #fffafc;
+  padding: 4rem;
+  text-align: center;
+}
+.welcome_text {
+  width: 95%;
+}
+.name {
+  font-size: 1.2rem;
+  color: #080827;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.data {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .chunk {
   margin: 2rem auto 0;
   text-align: center;
 }
+.chunk > p {
+  margin: 0.5rem auto;
+}
 
-ul li p {
-  text-align: center;
+.main {
+  padding: 1rem 0;
 }
 
 .intro {
@@ -79,8 +98,9 @@ ul li p {
   box-shadow: #4c4c4c81 0px 50px 100px -20px, #fffafc 0px 30px 60px -30px;
 }
 .main_header {
-  font-size: 1rem;
+  font-size: 1.5rem;
   width: 100%;
+  text-align: center;
 }
 .cut_header {
   color: #eb5a52;
@@ -101,11 +121,18 @@ ul li p {
 
 .career ul li {
   border: 1px dashed #080827;
+  border-radius: 0.7rem;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
 }
 
 .certification ul li {
   background: #fffafc;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
   box-shadow: #4c4c4c81 0px 50px 100px -20px, #fffafc 0px 30px 60px -30px;
 }
 
@@ -114,9 +141,6 @@ ul li p {
 }
 
 @media (min-width: 600px) {
-  .main {
-    padding: 1rem 3rem;
-  }
   section {
     margin: 0 auto 3rem;
     padding: 3rem 2rem;
@@ -129,18 +153,26 @@ ul li p {
     font-size: 1.5rem;
     margin: 1rem auto;
   }
+  .main {
+    padding: 1rem 3rem;
+  }
+  .name {
+    font-size: 1.5rem;
+    /* text-align: left; */
+  }
   .intro {
     flex-flow: row;
   }
   .main_header {
     font-size: 3rem;
     width: 80%;
+    text-align: left;
   }
   ul {
     flex-flow: row;
   }
   ul li {
-    flex-flow: row nowrap;
+    flex-flow: column;
     flex: 0 0 32%;
   }
   .chunk {

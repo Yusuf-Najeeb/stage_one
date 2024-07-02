@@ -14,7 +14,7 @@
             <span class="cut_header">My Tech Journey</span>: 2 Years Roadmap
             Plan
           </h1>
-          <p>
+          <p class="welcome_text">
             Welcome to my personal tech space! I'm passionate and dedicated
             front-end developer, I am excited to share my aspirations and goals
             for the next two years. This journey is about growth, innovation,
@@ -24,8 +24,16 @@
           </p>
         </div>
         <div>
-          <img src="images/headShot.jpeg" alt="#" />
-          <p>Najeeb</p>
+          <div class="data">
+            <p class="time" data-testid="currentTimeUTC">Time</p>
+            <p class="day" data-testid="currentDay">Today</p>
+          </div>
+          <img
+            src="images/headShot.jpeg"
+            alt="Najeeb's Profile picture"
+            data-testid="slackProfilePicture"
+          />
+          <p class="name" data-testid="slackDisplayName">Najeeb</p>
         </div>
       </section>
       <section class="professional">
@@ -277,7 +285,7 @@
           </ul>
         </div>
       </section>
-      <section class="conclusion">
+      <footer class="conclusion">
         <h2>Conclusion</h2>
         <p>
           The next two years promise to be a period of intense learning, growth,
@@ -287,7 +295,7 @@
           tuned for updates and feel free to connect with me on this exciting
           path!
         </p>
-      </section>
+      </footer>
     </main>
   </body>
 </html>
