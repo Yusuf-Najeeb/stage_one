@@ -11,5 +11,3 @@ function getTime() {
 }
 
 getTime();
-
-setInterval(getTime, 1000);
