@@ -101,7 +101,7 @@ footer {
   right: 0;
 }
 .data p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #080827;
   margin: 0.5rem auto;
 }
@@ -123,7 +123,7 @@ footer {
 
 .intro {
   background: #fffafc;
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,6 +192,7 @@ footer {
 
   .intro {
     flex-flow: row;
+    margin-top: 2.5rem;
   }
   .main_header {
     font-size: 2rem;

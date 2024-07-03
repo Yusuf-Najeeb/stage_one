@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function getTime() {
     const time = now.toUTCString().split(" ")[4];
     currentTime.textContent = `Time: ${time}`;
-    currentDay.textContent = today;
+    currentDay.textContent = `Day: ${today}`;
   }
 
   getTime();
